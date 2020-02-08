@@ -28,7 +28,7 @@ step-uat:
   script:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo yum install -y python-pip
-    - sudo pip install --upgrade setuptools
+    - sudo pip install --user --upgrade setuptools
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
@@ -45,7 +45,7 @@ step-deploy-staging:
   script:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo yum install -y python-pip
-    - sudo pip install --upgrade setuptools
+    - sudo pip install --user --upgrade setuptools
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
@@ -62,7 +62,7 @@ step-deploy-production:
   script:
     - echo setting up env $DYNAMIC_ENV_VAR
     - sudo yum install -y python-pip
-    - sudo pip install --upgrade setuptools
+    - sudo pip install --user --upgrade setuptools
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
