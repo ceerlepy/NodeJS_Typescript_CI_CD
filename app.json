@@ -1,0 +1,7 @@
+{
+  "name": "NODEJS_TYPESCRIPT_CI_CD",
+  "description": "A barebones TypeScript Node.js CRUD REST API",
+  "repository": "https://github.com/ceerlepy/NodeJS_Typescript_CI_CD",
+  "logo": "https://github.com/ceerlepy/NodeJS_Typescript_CI_CD/blob/master/cosmo1.png",
+  "keywords": ["node", "typescript", "crud", "ceerlepy"]
+}
