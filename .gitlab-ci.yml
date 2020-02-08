@@ -65,6 +65,3 @@ step-deploy-production:
     - sudo docker-compose -f docker-compose.yml build --no-cache
     - sudo docker-compose -f docker-compose.yml up -d
   when: manual
-
-
-
