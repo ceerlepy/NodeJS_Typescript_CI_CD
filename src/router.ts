@@ -109,7 +109,7 @@ class Router {
             uuid: req.params.id
           });
         } else {
-          res.status(404).send(JSON.stringify({ error: "no such cat" }));
+          res.status(404).send(JSON.stringify({ error: "No such cat" }));
         }
       }
     );
