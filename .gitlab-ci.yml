@@ -30,7 +30,6 @@ step-uat:
     - sudo yum install -y python-pip
     - sudo pip install --user --upgrade setuptools
     - sudo yum install python-devel
-    - sudo pip install docker
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
@@ -49,7 +48,6 @@ step-deploy-staging:
     - sudo yum install -y python-pip
     - sudo pip install --user --upgrade setuptools
     - sudo yum install python-devel
-    - sudo pip install docker
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
@@ -68,7 +66,6 @@ step-deploy-production:
     - sudo yum install -y python-pip
     - sudo pip install --user --upgrade setuptools
     - sudo yum install python-devel
-    - sudo pip install docker
     - sudo pip install docker-compose
     - sudo docker image prune -f
     - sudo docker-compose -f docker-compose.yml build --no-cache
